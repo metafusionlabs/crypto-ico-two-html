@@ -24,8 +24,7 @@ jQuery(document).ready(function ($) {
       arrows: true,
       prevArrow: $('.testimonial-left'),
       nextArrow: $('.testimonial-right'),
-      responsive: [
-         
+      responsive: [ 
         {
           breakpoint:991,
           settings: {

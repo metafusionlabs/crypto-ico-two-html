@@ -12,7 +12,6 @@ function handleTabClick(evt, groupId, contentId) {
     contentElements.forEach((element) => element.classList.remove("active"));
     document.getElementById(contentId).classList.add("active");
 }
-
 // Initialize default tabs
 document.getElementById("defaultOpen-coin").classList.add("active");
 document.getElementById("all-coin").classList.add("active");

@@ -862,6 +862,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.dtr-expanded > td.dtr-control:
  
 .step-card{
   box-shadow: 0px 6.58px 16.45px 0px #FFFFFF1A inset;
+  overflow: hidden;
   backdrop-filter: blur(83.05521392822266px);
   padding: 30px;
   border-radius: 25px;
@@ -1166,4 +1167,85 @@ border-radius: 20px;
 }
 .tabcontent.active, .products.active {
   display: block;
+}
+.zoom{
+  animation:zoom 3s ease-in-out infinite alternate;
+}
+.zoom-out{
+  animation:zoom_out 3s ease-in-out infinite alternate;
+}
+.move-down{
+  animation:move-down 3s ease-in-out infinite alternate;
+}
+@keyframes zoom {
+  0% {
+    transform:scale(1)
+  }
+  100% {
+    transform:scale(1.08)
+  }
+}
+@keyframes zoom_out {
+  0% {
+    transform:scale(0.8)
+  }
+  100% {
+    transform:scale(1)
+  }
+}
+@keyframes move-down {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 150px;
+  }
+}
+.rotate-box {
+	animation: rotate360 10s linear infinite;
+}
+.rotate-box-negative {
+	animation: rotate-360 10s linear infinite;
+}
+@keyframes rotate360 {
+  0% {
+    transform:rotate(0)
+  }
+  to {
+    transform:rotate(360deg)
+  }
+}
+@keyframes rotate-360 {
+  0% {
+    transform:rotate(0)
+  }
+  to {
+    transform:rotate(-360deg)
+  }
+}
+.rotate-box-10 {
+	animation: rotate-10 5s ease-in-out infinite alternate;
+}
+@keyframes rotate-10 {
+  0% {
+    transform:rotate(0)
+  }
+  to {
+    transform:rotate(10deg)
+  }
+}
+@keyframes zoomBackground{
+  0%{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.4);
+  }
+}
+.blog-post{
+  overflow: hidden;
+  border-radius:25px;
+}
+.blog-post img{
+  animation: zoomBackground 6s infinite alternate ease-in-out;
 }
