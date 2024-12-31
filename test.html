@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Navigation</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .tablinks {
+            cursor: pointer;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            margin: 0 5px;
+        }
+        .tablinks.active {
+            background-color: #007BFF;
+            color: white;
+        }
+        .tabcontent, .products {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .tabcontent.active, .products.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- First Tab Navigation -->
+    <ul class="d-flex align-items-center justify-content-center" id="group1">
+        <li class="tablinks" onclick="handleTabClick(event, 'group1', 'all-coin')" id="defaultOpen-coin">All Coin</li>
+        <li class="tablinks" onclick="handleTabClick(event, 'group1', 'new-coin')">New Coin</li>
+    </ul>
+
+    <!-- First Tab Content -->
+    <div class="clients-trading-table coin_infoContent products" id="all-coin">
+        <table class="data-show-table mobile-view-table w-100 ">
+            <thead>
+            <tr>
+                <th class="text-start">Coins</th>
+                <th class="text-start">Est. APR</th>
+                <th class="text-start">24th Update</th>
+                <th class="text-start">Duration</th>
+                <th class="text-start">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                    <td class="text-start">
+                    <div class="trading-info-logo">
+                        <img src="assets/images/icon/btc.png" alt="images">
+                        <span>BTC Bitcoin</span>
+                    </div>
+                    </td>
+                    <td class="text-start color-29b">
+                    0.37%-17.25%
+                    </td>
+                    <td class="text-start color-29b">
+                    +54%
+                    </td>
+                    
+                    <td class="text-start">
+                    Cash/Token
+                    </td>
+                
+                    <td class="text-start">
+                    <div class="d-inline-block action-btn">
+                        <a href="#" class="primary-btn-sm">Stake Now</a>
+                    </div>
+                    </td>
+            </tr>
+            <tr>
+                    <td class="text-start">
+                    <div class="trading-info-logo">
+                        <img src="assets/images/icon/eth.png" alt="images">
+                        <span>ETH Ethereum</span>
+                    </div>
+                    </td>
+                    <td class="text-start color-29b">
+                    0.37%-17.25%
+                    </td>
+                    <td class="text-start color-ef4">
+                    -0.3%
+                    </td>
+                    
+                    <td class="text-start">
+                    Cash/Token
+                    </td>
+                
+                    <td class="text-start">
+                    <div class="d-inline-block action-btn">
+                        <a href="#" class="primary-btn-sm">Stake Now</a>
+                    </div>
+                    </td>
+            </tr>
+            <tr>
+                    <td class="text-start">
+                    <div class="trading-info-logo">
+                        <img src="assets/images/icon/ltc.png" alt="images">
+                        <span>LTC Litecoin</span>
+                    </div>
+                    </td>
+                    <td class="text-start color-29b">
+                    0.37%-17.25%
+                    </td>
+                    <td class="text-start color-29b">
+                    +54%
+                    </td>
+                    
+                    <td class="text-start">
+                    Cash/Token
+                    </td>
+                
+                    <td class="text-start">
+                    <div class="d-inline-block action-btn">
+                        <a href="#" class="primary-btn-sm">Stake Now</a>
+                    </div>
+                    </td>
+            </tr>
+            <tr>
+                    <td class="text-start">
+                    <div class="trading-info-logo">
+                        <img src="assets/images/icon/bch.png" alt="images">
+                        <span>BCH Bitcoin Cash</span>
+                    </div>
+                    </td>
+                    <td class="text-start color-29b">
+                    0.37%-17.25%
+                    </td>
+                    <td class="text-start color-29b">
+                    +54%
+                    </td>
+                    
+                    <td class="text-start">
+                    Cash/Token
+                    </td>
+                
+                    <td class="text-start">
+                    <div class="d-inline-block action-btn">
+                        <a href="#" class="primary-btn-sm">Stake Now</a>
+                    </div>
+                    </td>
+            </tr>
+            <tr>
+                    <td class="text-start">
+                    <div class="trading-info-logo">
+                        <img src="assets/images/icon/tether.png" alt="images">
+                        <span>USDT Tether</span>
+                    </div>
+                    </td>
+                    <td class="text-start color-29b">
+                    0.37%-17.25%
+                    </td>
+                    <td class="text-start color-ef4">
+                    -0.95%
+                    </td>
+                    
+                    <td class="text-start">
+                    Cash/Token
+                    </td>
+                
+                    <td class="text-start">
+                    <div class="d-inline-block action-btn">
+                        <a href="#" class="primary-btn-sm">Stake Now</a>
+                    </div>
+                    </td>
+            </tr>
+            <tr>
+                    <td class="text-start">
+                    <div class="trading-info-logo">
+                        <img src="assets/images/icon/xrp.png" alt="images">
+                        <span>XRP Ripple</span>
+                    </div>
+                    </td>
+                    <td class="text-start color-29b">
+                    0.37%-17.25%
+                    </td>
+                    <td class="text-start color-29b">
+                    +54%
+                    </td>
+                    
+                    <td class="text-start">
+                    Cash/Token
+                    </td>
+                
+                    <td class="text-start">
+                    <div class="d-inline-block action-btn">
+                        <a href="#" class="primary-btn-sm">Stake Now</a>
+                    </div>
+                    </td>
+            </tr>
+            
+            </tbody>
+        </table>
+    </div>
+    <div class="clients-trading-table coin_infoContent products" id="new-coin">
+        <table class="data-show-table mobile-view-table w-100 ">
+            <thead>
+            <tr>
+                <th class="text-start">Coins</th>
+                <th class="text-start">Est. APR</th>
+                <th class="text-start">24th Update</th>
+                <th class="text-start">Duration</th>
+                <th class="text-start">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                    <td class="text-start">
+                    <div class="trading-info-logo">
+                        <img src="assets/images/icon/btc.png" alt="images">
+                        <span>BTC Bitcoin</span>
+                    </div>
+                    </td>
+                    <td class="text-start color-29b">
+                    0.37%-17.25%
+                    </td>
+                    <td class="text-start color-29b">
+                    +54%
+                    </td>
+                    
+                    <td class="text-start">
+                    Cash/Token
+                    </td>
+                
+                    <td class="text-start">
+                    <div class="d-inline-block action-btn">
+                        <a href="#" class="primary-btn-sm">Stake Now</a>
+                    </div>
+                    </td>
+            </tr>
+            <tr>
+                    <td class="text-start">
+                    <div class="trading-info-logo">
+                        <img src="assets/images/icon/eth.png" alt="images">
+                        <span>ETH Ethereum</span>
+                    </div>
+                    </td>
+                    <td class="text-start color-29b">
+                    0.37%-17.25%
+                    </td>
+                    <td class="text-start color-ef4">
+                    -0.3%
+                    </td>
+                    
+                    <td class="text-start">
+                    Cash/Token
+                    </td>
+                
+                    <td class="text-start">
+                    <div class="d-inline-block action-btn">
+                        <a href="#" class="primary-btn-sm">Stake Now</a>
+                    </div>
+                    </td>
+            </tr>
+            <tr>
+                    <td class="text-start">
+                    <div class="trading-info-logo">
+                        <img src="assets/images/icon/ltc.png" alt="images">
+                        <span>LTC Litecoin</span>
+                    </div>
+                    </td>
+                    <td class="text-start color-29b">
+                    0.37%-17.25%
+                    </td>
+                    <td class="text-start color-29b">
+                    +54%
+                    </td>
+                    
+                    <td class="text-start">
+                    Cash/Token
+                    </td>
+                
+                    <td class="text-start">
+                    <div class="d-inline-block action-btn">
+                        <a href="#" class="primary-btn-sm">Stake Now</a>
+                    </div>
+                    </td>
+            </tr>
+            <tr>
+                    <td class="text-start">
+                    <div class="trading-info-logo">
+                        <img src="assets/images/icon/bch.png" alt="images">
+                        <span>BCH Bitcoin Cash</span>
+                    </div>
+                    </td>
+                    <td class="text-start color-29b">
+                    0.37%-17.25%
+                    </td>
+                    <td class="text-start color-29b">
+                    +54%
+                    </td>
+                    
+                    <td class="text-start">
+                    Cash/Token
+                    </td>
+                
+                    <td class="text-start">
+                    <div class="d-inline-block action-btn">
+                        <a href="#" class="primary-btn-sm">Stake Now</a>
+                    </div>
+                    </td>
+            </tr>
+            <tr>
+                    <td class="text-start">
+                    <div class="trading-info-logo">
+                        <img src="assets/images/icon/tether.png" alt="images">
+                        <span>USDT Tether</span>
+                    </div>
+                    </td>
+                    <td class="text-start color-29b">
+                    0.37%-17.25%
+                    </td>
+                    <td class="text-start color-ef4">
+                    -0.95%
+                    </td>
+                    
+                    <td class="text-start">
+                    Cash/Token
+                    </td>
+                
+                    <td class="text-start">
+                    <div class="d-inline-block action-btn">
+                        <a href="#" class="primary-btn-sm">Stake Now</a>
+                    </div>
+                    </td>
+            </tr>
+            <tr>
+                    <td class="text-start">
+                    <div class="trading-info-logo">
+                        <img src="assets/images/icon/xrp.png" alt="images">
+                        <span>XRP Ripple</span>
+                    </div>
+                    </td>
+                    <td class="text-start color-29b">
+                    0.37%-17.25%
+                    </td>
+                    <td class="text-start color-29b">
+                    +54%
+                    </td>
+                    
+                    <td class="text-start">
+                    Cash/Token
+                    </td>
+                
+                    
+            </tr>
+            
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Second Tab Navigation -->
+    <div class="tab-btn d-inline-block d-flex justify-content-center mt-30" id="group2">
+        <ul class="d-flex align-items-center justify-content-center">
+            <li class="tablinks" onclick="handleTabClick(event, 'group2', 'Forex')" id="defaultOpen-tab2">Private sale</li>
+            <li class="tablinks" onclick="handleTabClick(event, 'group2', 'Commodites')">Ecosystem</li>
+        </ul>
+    </div>
+
+    <!-- Second Tab Content -->
+    <div class="esteemed-partners-list text-center position-relative tabcontent" id="Forex">
+         
+    </div>
+    <div class="esteemed-partners-list text-center position-relative tabcontent" id="Commodites">juel 2</div>
+
+    <script>
+        function handleTabClick(evt, groupId, contentId) {
+            // Handle tab button activation for the specific group
+            const group = document.getElementById(groupId);
+            const tablinks = group.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            evt.currentTarget.classList.add("active");
+
+            // Handle tab content visibility for the specific group
+            const contentElements = document.querySelectorAll(`.${groupId}Content`);
+            contentElements.forEach((element) => element.classList.remove("active"));
+            document.getElementById(contentId).classList.add("active");
+        }
+
+        // Initialize default tabs
+        document.getElementById("defaultOpen-coin").classList.add("active");
+        document.getElementById("all-coin").classList.add("active");
+        document.getElementById("defaultOpen-tab2").classList.add("active");
+        document.getElementById("Forex").classList.add("active");
+
+        // Add group-specific content class
+        document.getElementById("all-coin").classList.add("group1Content");
+        document.getElementById("new-coin").classList.add("group1Content");
+        document.getElementById("Forex").classList.add("group2Content");
+        document.getElementById("Commodites").classList.add("group2Content");
+    </script>
+</body>
+</html>
