@@ -134,6 +134,9 @@ p {
 	text-transform: capitalize;
 	border: 1px solid #1CD3948F;
 }
+.border-1{
+  border:1px solid #F04547 !important
+}
 .secondary-btn-sm{
   padding:4px 24px;
 	color:#fff;
