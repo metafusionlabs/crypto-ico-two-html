@@ -135,4 +135,7 @@ window.addEventListener('load', () => {
   preloader.classList.add('loader-hide');
 });
 
-
+$('.counter').counterUp({
+  delay: 20,
+  time: 1500
+});
